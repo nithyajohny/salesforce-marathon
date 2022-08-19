@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Suite" verbose="6">
+<parameter name="browsername" value="chrome"></parameter>
+<parameter name="url" value="https://login.salesforce.com/ "></parameter>
+<parameter name="username" value="nithikirubayesuraj@gmail.com"></parameter>
+<parameter name="password" value="Nithyjohny94"></parameter>
+
+  <test thread-count="5" parallel="classes" name="Test">
+    <classes>
+      <class name="marathon3.Testcase1"/>
+          </classes>
+  </test> <!-- Test -->
+  <parameter name="browsername" value="edge"></parameter>
+<parameter name="url" value="https://login.salesforce.com/ "></parameter>
+<parameter name="username" value="nithikirubayesuraj@gmail.com"></parameter>
+<parameter name="password" value="Nithyjohny94"></parameter>
+<test thread-count="5" parallel="classes" name="Test1">
+    <classes>
+          	<class name="marathon3.Testcase2"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
